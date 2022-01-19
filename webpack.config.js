@@ -18,7 +18,8 @@ module.exports = (env) => {
     entry: path.resolve(__dirname, 'client', 'src'),
     output: {
       path: path.resolve(__dirname, 'client', 'dist'),
-      filename: 'bundle.js'
+      filename: 'bundle.js',
+      hashFunction: 'SHA256'
     },
     module: {
       rules: [
